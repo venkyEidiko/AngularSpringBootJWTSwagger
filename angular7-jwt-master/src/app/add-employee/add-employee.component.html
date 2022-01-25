@@ -1,0 +1,226 @@
+<!-- <div class="col-md-6">
+  <h2 class="text-center">Add Employee</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" [(ngModel)]="user.name" placeholder="Name" name="name" class="form-control" id="name">
+    </div>
+  
+    <div class="form-group">
+      <label for="designation">Designation:</label>
+      <input [(ngModel)]="user.designation" placeholder="Designation" name="designation" class="form-control" id="designation">
+    </div>
+  
+    <div class="form-group">
+      <label for="empId">Employee Id</label>
+      <input [(ngModel)]="user.empId" placeholder="Employee Id" name="Employee Id" class="form-control" id="employeeid">
+    </div>
+  
+    <button class="btn btn-success" (click)="createEmployee()">Create</button>
+  </form>
+  </div> -->
+
+
+
+  <!-- <div class="col-md-6 offset-md-3">
+    <br /> <br />
+    <hr />
+    <h3 class="font-weight-light"> Create Employee </h3> -->
+    <!-- <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label> Employee Id</label>
+            <input type="number" class ="form-control" id = "id"
+                [(ngModel)] = "employee.id" name = "id">
+        </div>
+        <div class="form-group">
+            <label> First Name</label>
+            <input type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "employee.firstName" name = "firstName">
+        </div>
+    
+        <div class="form-group">
+            <label> Last Name</label>
+            <input type="text" class ="form-control" id = "lastName"
+                [(ngModel)] = "employee.lastName" name = "lastName">
+        </div>
+    
+        <div class="form-group">
+            <label> Email Id</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "employee.emailId" name = "emailId">
+        </div>
+        <div class="form-group">
+            <label> Date Of Birth</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "employee.emailId" name = "emailId">
+        </div>
+        <div class="form-group">
+            <label> Gender</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "employee.emailId" name = "emailId">
+        </div>
+        <div class="form-group">
+            <label>City</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "employee.emailId" name = "emailId">
+        </div>
+        <div class="form-group">
+            <label> State</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "employee.emailId" name = "emailId">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form> -->
+
+
+    <!-- <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label> Employee Id</label>
+            <input placeholder="Enter Employee Id" type="number" class ="form-control" id = "id"
+                [(ngModel)]="employee.id" name = "id" >
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>First Name</label>
+                <input type="email" [(ngModel)] = "employee.name" class="form-control" placeholder="Enter your Name" id="name" name="name" >
+            </div>
+          
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" [(ngModel)] = "employee.mailId" class="form-control"  placeholder="Email" id="mailId" name="mailId" >
+            </div>
+           
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+              <label for="inputCity">Dept</label>
+              <input type="text" [(ngModel)] = "employee.dept" class="form-control" id="dept" name="dept">
+          </div>
+          
+          <div class="form-group col-md-4">
+            <label for="inputState">Salary</label>
+            <input type="text" [(ngModel)] = "employee.salary" class="form-control"  placeholder="state" id="salary" name="salary" >
+  
+            
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+              <label for="inputEmail4">Date of Birth</label>
+              <input type="date" [(ngModel)] = "employee.dateOfBirth" class="form-control" placeholder="select DateOfBirth" id="dateOfBirth" name="dateOfBirth" >
+          </div>
+         
+      </div>
+     
+
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" [(ngModel)] = "employee.address" class="form-control"  placeholder="1234 Main St" id="address" name="address" >
+        </div>
+
+     
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+</div> -->
+
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+            <form (ngSubmit) = "onSubmit()" >
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" id="name" [(ngModel)] = "employee.name" name = "name" class="form-control form-control-lg" />
+                    <label class="form-label"  for="firstName"> Name</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" id="id"  [(ngModel)] = "employee.id" name = "id" class="form-control form-control-lg" />
+                    <label class="form-label" for="lastName">Employee Id</label>
+                  </div>
+
+                </div>
+              </div>
+
+              
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <input type="email" [(ngModel)] = "employee.mailId" name = "mailId" id="mailId" class="form-control form-control-lg" />
+                    <label class="form-label" for="emailAddress">Email</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <input type="tel" [(ngModel)] = "employee.salary" name = "salary" id="salary" class="form-control form-control-lg" />
+                    <label class="form-label" for="salary">Salary</label>
+                  </div>
+
+                </div>
+              </div>
+
+         
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" [(ngModel)] = "employee.dept" name = "dept" id="dept" class="form-control form-control-lg" />
+                    <label class="form-label" for="firstName"> Department</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" [(ngModel)] = "employee.address" name = "address" id="address" class="form-control form-control-lg" />
+                    <label class="form-label" for="lastName">Address</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                  <div class="form-outline datepicker w-100">
+                    <input
+                      type="date"
+                      class="form-control form-control-lg"
+                      id="dateOfBirth"
+                      [(ngModel)] = "employee.dateOfBirth" name = "dateOfBirth"
+                    />
+                    <label for="birthdayDate" class="form-label">Birthday</label>
+                  </div>
+              </div>
+              </div>
+
+              <div class="mt-4 pt-2">
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

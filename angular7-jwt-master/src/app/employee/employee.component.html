@@ -1,0 +1,56 @@
+<!-- <div class="col-md-6">
+  <table class="table table-striped">
+  <thead>
+  <tr>
+    <th>name</th>
+    <th>designation</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let employee of employees">
+          <td>{{employee.name}}</td>
+          <td>{{employee.designation}}</td>
+          <td><button class="btn btn-danger" (click)="deleteEmployee(employee)"> Delete Employee</button></td>
+          </tr>
+  </tbody>
+    </table>
+
+  </div> -->
+
+
+  
+<br/> <br />
+<hr />
+<h2 class="font-weight-light  text-large" > Employee List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th> Name </th>
+            <th> Email Id</th>
+            <th> Dept</th>
+            <th>Salary</th>
+            <th> DateOfBirth</th>
+            
+            <th>Address</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees" >
+            <td> {{ employee.id }} </td>
+            <td> {{ employee.name }} </td>
+            <td> {{ employee.mailId }} </td>
+            <td> {{ employee.dept }} </td>
+            <td> {{ employee.salary }} </td>
+            <td> {{ employee.dateOfBirth }} </td>
+            <td> {{ employee.address }} </td>
+           
+            <td>
+                <button (click) = "updateEmployee(employee.id)" class = "btn btn-outline-primary btn-sm"> Update</button>
+                <button (click) = "deleteEmployee(employee.id)" class = "btn  btn-outline-danger btn-sm " style="margin-left: 5px"> Delete</button>
+                <button (click) = "employeeDetails(employee.id)" class = "btn btn-outline-info btn-sm" style="margin-left: 5px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
